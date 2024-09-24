@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="pt" region="br" class="spaces-height-tweak">
+
+
+<head>
+    <title>Clinica TCCistas</title>
+
+    <link rel="icon" href="/img/brain_icon.svg">
+
+    <meta charset="utf-8" />
+    <meta name="description" content="Encontre um profissional especialista em TCCna sua cidade!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link href="/css/index.css" rel="stylesheet" />
+    <link href="/css/index2.css" rel="stylesheet" />
+    <style>
+        .optimize-hiding .optimize-hiding-element {
+            opacity: 0 !important
+        }
+    </style>
+
+</head>
+
+<body id="search-listing" class="search-listing">
+
+
+    <div class="wrapper">
+
+        <style>
+            .patient-app-banner-relative-placeholder {
+                height: 125px;
+            }
+
+            @media only screen and (min-width: 576px) {
+                .patient-app-banner-relative-placeholder {
+                    display: none;
+                }
+            }
+        </style>
+
+
+
+
+
+        <!--Navigation-->
+        <nav data-id="main-header" role="navigation"
+            class="navbar navbar-dark bg-secondary navbar-expand-md navbar-custom mb-0 mx-auto px-2 py-0 px-md-1">
+            <!--Inside company icon-->
+            <div class="container">
+                <!--Docplanner logo-->
+
+
+
+
+
+                <div class="m-0">
+                    <a href="/" data-test-id="dp-logo">
+                        <span class="navbar-brand p-0 ">
+                            <img src="/img/navbar_logo.jpg">
+                        </span>
+                    </a>
+    
+                </div>
+                <!--Toggle buttons-->
+                <a href="#" class="navbar-toggler navbar-mobile-search-toggle" data-id="search-toggle"
+                    data-toggle="collapse" data-target="[data-id='navbar-search-collapse']" data-ga-event="click"
+                    data-ga-category="Doctor panel" data-ga-action="Klik w lupę">
+                    <div class="text-truncate pr-1">
+                        <span data-id="search-query"></span>
+                    </div>
+                    <i class="svg-icon svg-icon-search svg-icon-size-16 svg-icon-color-white"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M14 9.5a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0Zm-.665 5.249a6.5 6.5 0 1 1 1.414-1.414l4.958 4.958a1 1 0 0 1-1.414 1.414l-4.958-4.958Z" />
+                        </svg></i>
+                </a>
+
+                <button class="navbar-toggler navbar-mobile-nav-toggle collapsed" data-id="navbar-toggle"
+                    data-target="[data-id='navbar-right-collapse']" data-test-id="navbar-hamburger-menu"
+                    data-toggle="collapse" type="button">
+                    <div class="hamburger">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar icon-bar-one"></span>
+                        <span class="icon-bar icon-bar-two"></span>
+                        <span class="icon-bar icon-bar-three"></span>
+                    </div>
+                </button>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="navbar-collapse navbar-search px-2 py-1 collapse" data-id="navbar-search-collapse">
+                    <div class="nav d-flex flex-nowrap flex-grow-1 justify-content-between">
+
+                        <div data-topsearch="true" id="search" class="top-search">
+                            <div data-id="search-autocomplete-vue-app">
+                                <search-autocomplete :is-search-widget-placeholder="false"
+                                    :suggested-items="[{&quot;specialization.id&quot;:36,&quot;specialization.name&quot;:&quot;Ginecologista&quot;},{&quot;specialization.id&quot;:78,&quot;specialization.name&quot;:&quot;Psiquiatra&quot;},{&quot;specialization.id&quot;:76,&quot;specialization.name&quot;:&quot;Psic\u00f3logo&quot;},{&quot;specialization.id&quot;:67,&quot;specialization.name&quot;:&quot;Ortopedista - Traumatologista&quot;},{&quot;specialization.id&quot;:24,&quot;specialization.name&quot;:&quot;Dermatologista&quot;},{&quot;specialization.id&quot;:71,&quot;specialization.name&quot;:&quot;Pediatra&quot;},{&quot;specialization.id&quot;:26,&quot;specialization.name&quot;:&quot;Endocrinologista&quot;},{&quot;specialization.id&quot;:65,&quot;specialization.name&quot;:&quot;Oftalmologista&quot;},{&quot;specialization.id&quot;:8,&quot;specialization.name&quot;:&quot;Cardiologista&quot;},{&quot;specialization.id&quot;:22,&quot;specialization.name&quot;:&quot;M\u00e9dico cl\u00ednico geral&quot;},{&quot;specialization.id&quot;:69,&quot;specialization.name&quot;:&quot;Otorrino&quot;},{&quot;specialization.id&quot;:87,&quot;specialization.name&quot;:&quot;Urologista&quot;},{&quot;specialization.id&quot;:60,&quot;specialization.name&quot;:&quot;Neurologista&quot;},{&quot;specialization.id&quot;:64,&quot;specialization.name&quot;:&quot;Dentista&quot;},{&quot;specialization.id&quot;:15,&quot;specialization.name&quot;:&quot;Cirurgi\u00e3o geral&quot;},{&quot;specialization.id&quot;:18,&quot;specialization.name&quot;:&quot;Cirurgi\u00e3o pl\u00e1stico&quot;},{&quot;specialization.id&quot;:32,&quot;specialization.name&quot;:&quot;Gastroenterologista&quot;},{&quot;specialization.id&quot;:33,&quot;specialization.name&quot;:&quot;Generalista&quot;},{&quot;specialization.id&quot;:58,&quot;specialization.name&quot;:&quot;Neurocirurgi\u00e3o&quot;},{&quot;specialization.id&quot;:72,&quot;specialization.name&quot;:&quot;Pneumologista&quot;},{&quot;specialization.id&quot;:23,&quot;specialization.name&quot;:&quot;Coloproctologista&quot;},{&quot;specialization.id&quot;:62,&quot;specialization.name&quot;:&quot;Nutricionista&quot;},{&quot;specialization.id&quot;:3,&quot;specialization.name&quot;:&quot;Alergista&quot;},{&quot;specialization.id&quot;:82,&quot;specialization.name&quot;:&quot;Reumatologista&quot;},{&quot;specialization.id&quot;:13,&quot;specialization.name&quot;:&quot;Cirurgi\u00e3o do aparelho digestivo&quot;},{&quot;specialization.id&quot;:6,&quot;specialization.name&quot;:&quot;Angiologista&quot;},{&quot;specialization.id&quot;:61,&quot;specialization.name&quot;:&quot;Neurologista pedi\u00e1trico&quot;},{&quot;specialization.id&quot;:20,&quot;specialization.name&quot;:&quot;Cirurgi\u00e3o vascular&quot;},{&quot;specialization.id&quot;:37,&quot;specialization.name&quot;:&quot;Hematologista&quot;},{&quot;specialization.id&quot;:41,&quot;specialization.name&quot;:&quot;Mastologista&quot;},{&quot;specialization.id&quot;:56,&quot;specialization.name&quot;:&quot;Nefrologista&quot;},{&quot;specialization.id&quot;:7,&quot;specialization.name&quot;:&quot;Oncologista&quot;},{&quot;specialization.id&quot;:14,&quot;specialization.name&quot;:&quot;Cirurgi\u00e3o buco-maxilo-facial&quot;},{&quot;specialization.id&quot;:35,&quot;specialization.name&quot;:&quot;Geriatra&quot;},{&quot;specialization.id&quot;:39,&quot;specialization.name&quot;:&quot;Infectologista&quot;},{&quot;specialization.id&quot;:30,&quot;specialization.name&quot;:&quot;Fisioterapeuta&quot;},{&quot;specialization.id&quot;:63,&quot;specialization.name&quot;:&quot;Nutr\u00f3logo&quot;},{&quot;specialization.id&quot;:75,&quot;specialization.name&quot;:&quot;Psicanalista&quot;},{&quot;specialization.id&quot;:12,&quot;specialization.name&quot;:&quot;Cirurgi\u00e3o de cabe\u00e7a e pesco\u00e7o&quot;},{&quot;specialization.id&quot;:28,&quot;specialization.name&quot;:&quot;Endoscopista&quot;},{&quot;specialization.id&quot;:38,&quot;specialization.name&quot;:&quot;Homeopata&quot;},{&quot;specialization.id&quot;:31,&quot;specialization.name&quot;:&quot;Fonoaudi\u00f3logo&quot;},{&quot;specialization.id&quot;:11,&quot;specialization.name&quot;:&quot;Cirurgi\u00e3o da m\u00e3o&quot;},{&quot;specialization.id&quot;:5,&quot;specialization.name&quot;:&quot;Anestesiologista&quot;},{&quot;specialization.id&quot;:80,&quot;specialization.name&quot;:&quot;Radiologista&quot;},{&quot;specialization.id&quot;:27,&quot;specialization.name&quot;:&quot;Endocrinologista pedi\u00e1trico&quot;},{&quot;specialization.id&quot;:1,&quot;specialization.name&quot;:&quot;M\u00e9dico Acupunturista&quot;},{&quot;specialization.id&quot;:42,&quot;specialization.name&quot;:&quot;M\u00e9dico de fam\u00edlia&quot;},{&quot;specialization.id&quot;:17,&quot;specialization.name&quot;:&quot;Cirurgi\u00e3o pedi\u00e1trico&quot;},{&quot;specialization.id&quot;:46,&quot;specialization.name&quot;:&quot;M\u00e9dico do trabalho&quot;},{&quot;specialization.id&quot;:73,&quot;specialization.name&quot;:&quot;Pneumologista pedi\u00e1trico&quot;},{&quot;specialization.id&quot;:9,&quot;specialization.name&quot;:&quot;Cirurgi\u00e3o cardiovascular&quot;},{&quot;specialization.id&quot;:16,&quot;specialization.name&quot;:&quot;Cirurgi\u00e3o oncol\u00f3gico&quot;},{&quot;specialization.id&quot;:19,&quot;specialization.name&quot;:&quot;Cirurgi\u00e3o tor\u00e1cico&quot;},{&quot;specialization.id&quot;:47,&quot;specialization.name&quot;:&quot;M\u00e9dico do esporte&quot;},{&quot;specialization.id&quot;:21,&quot;specialization.name&quot;:&quot;Especialista em Dor&quot;},{&quot;specialization.id&quot;:91,&quot;specialization.name&quot;:&quot;Gastroenterologista pedi\u00e1trico&quot;},{&quot;specialization.id&quot;:99,&quot;specialization.name&quot;:&quot;Especialista em Cl\u00ednica M\u00e9dica&quot;},{&quot;specialization.id&quot;:51,&quot;specialization.name&quot;:&quot;Intensivista&quot;},{&quot;specialization.id&quot;:34,&quot;specialization.name&quot;:&quot;Geneticista&quot;},{&quot;specialization.id&quot;:86,&quot;specialization.name&quot;:&quot;Terapeuta complementar&quot;},{&quot;specialization.id&quot;:45,&quot;specialization.name&quot;:&quot;M\u00e9dico do Sono&quot;},{&quot;specialization.id&quot;:49,&quot;specialization.name&quot;:&quot;Especialista em Medicina F\u00edsica e Reabilita\u00e7\u00e3o&quot;},{&quot;specialization.id&quot;:89,&quot;specialization.name&quot;:&quot;Hepatologista&quot;},{&quot;specialization.id&quot;:48,&quot;specialization.name&quot;:&quot;Especialista em Medicina Est\u00e9tica&quot;},{&quot;specialization.id&quot;:59,&quot;specialization.name&quot;:&quot;Neurofisiologista&quot;},{&quot;specialization.id&quot;:88,&quot;specialization.name&quot;:&quot;Cardiologista pedi\u00e1trico&quot;},{&quot;specialization.id&quot;:79,&quot;specialization.name&quot;:&quot;Quiropraxista&quot;},{&quot;specialization.id&quot;:43,&quot;specialization.name&quot;:&quot;M\u00e9dico de tr\u00e1fego&quot;},{&quot;specialization.id&quot;:52,&quot;specialization.name&quot;:&quot;Internista&quot;},{&quot;specialization.id&quot;:25,&quot;specialization.name&quot;:&quot;Especialista em Diagn\u00f3stico por imagem&quot;},{&quot;specialization.id&quot;:95,&quot;specialization.name&quot;:&quot;Alergista pedi\u00e1trico&quot;},{&quot;specialization.id&quot;:102,&quot;specialization.name&quot;:&quot;Ortodontista&quot;},{&quot;specialization.id&quot;:77,&quot;specialization.name&quot;:&quot;Psicopedagogo&quot;},{&quot;specialization.id&quot;:70,&quot;specialization.name&quot;:&quot;An\u00e1tomopatologista&quot;},{&quot;specialization.id&quot;:68,&quot;specialization.name&quot;:&quot;Osteopata&quot;},{&quot;specialization.id&quot;:85,&quot;specialization.name&quot;:&quot;Terapeuta ocupacional&quot;},{&quot;specialization.id&quot;:57,&quot;specialization.name&quot;:&quot;Nefrologista pedi\u00e1trico&quot;},{&quot;specialization.id&quot;:84,&quot;specialization.name&quot;:&quot;Sex\u00f3logo&quot;},{&quot;specialization.id&quot;:53,&quot;specialization.name&quot;:&quot;M\u00e9dico perito&quot;},{&quot;specialization.id&quot;:4,&quot;specialization.name&quot;:&quot;Patologista cl\u00ednico&quot;},{&quot;specialization.id&quot;:100,&quot;specialization.name&quot;:&quot;Especialista em Reprodu\u00e7\u00e3o Humana&quot;},{&quot;specialization.id&quot;:81,&quot;specialization.name&quot;:&quot;Radioterapeuta&quot;},{&quot;specialization.id&quot;:29,&quot;specialization.name&quot;:&quot;Enfermeiro&quot;},{&quot;specialization.id&quot;:10,&quot;specialization.name&quot;:&quot;Cirurgi\u00e3o cranio-maxilo-facial&quot;},{&quot;specialization.id&quot;:74,&quot;specialization.name&quot;:&quot;Podologista&quot;},{&quot;specialization.id&quot;:83,&quot;specialization.name&quot;:&quot;Reumatologista pedi\u00e1trico&quot;},{&quot;specialization.id&quot;:94,&quot;specialization.name&quot;:&quot;Especialista em Biomedicina&quot;},{&quot;specialization.id&quot;:40,&quot;specialization.name&quot;:&quot;Infectologista pedi\u00e1trico&quot;},{&quot;specialization.id&quot;:54,&quot;specialization.name&quot;:&quot;Especialista em Medicina Nuclear&quot;},{&quot;specialization.id&quot;:101,&quot;specialization.name&quot;:&quot;Odontopediatra&quot;},{&quot;specialization.id&quot;:98,&quot;specialization.name&quot;:&quot;Hematologista pedi\u00e1trico&quot;},{&quot;specialization.id&quot;:55,&quot;specialization.name&quot;:&quot;Especialista em Medicina Preventiva&quot;},{&quot;specialization.id&quot;:2,&quot;specialization.name&quot;:&quot;Especialista em Administra\u00e7\u00e3o em Sa\u00fade&quot;},{&quot;specialization.id&quot;:110,&quot;specialization.name&quot;:&quot;Especialista em Ultrassonografia&quot;},{&quot;specialization.id&quot;:105,&quot;specialization.name&quot;:&quot;Especialista em Harmoniza\u00e7\u00e3o orofacial&quot;},{&quot;specialization.id&quot;:103,&quot;specialization.name&quot;:&quot;Educador f\u00edsico&quot;},{&quot;specialization.id&quot;:93,&quot;specialization.name&quot;:&quot;Especialista em Medicina do adolescente&quot;},{&quot;specialization.id&quot;:50,&quot;specialization.name&quot;:&quot;M\u00e9dico hiperbarista&quot;},{&quot;specialization.id&quot;:44,&quot;specialization.name&quot;:&quot;M\u00e9dico de emerg\u00eancia&quot;}]"
+                                    :suggested-places="[&quot;S\u00e3o Paulo&quot;,&quot;Rio de Janeiro&quot;,&quot;Bras\u00edlia&quot;,&quot;Salvador&quot;,&quot;Fortaleza&quot;,&quot;Belo Horizonte&quot;,&quot;Manaus&quot;,&quot;Curitiba&quot;,&quot;Recife&quot;,&quot;Goi\u00e2nia&quot;,&quot;Bel\u00e9m&quot;,&quot;Porto Alegre&quot;,&quot;Guarulhos&quot;,&quot;Campinas&quot;,&quot;S\u00e3o Lu\u00eds&quot;]"
+                                    :top-search="true" :widget="false" search-location="Pelotas - RS"
+                                    search-query="Psicólogo" query-data-id="autocomplete-search"
+                                    location-data-id="autocomplete-location">
+
+
+
+                                    <div class="row">
+                                        <div class="col-md-5 col-12 specialists-col">
+                                            <div class="d-flex align-items-center">
+                                                <input placeholder="especialidade, doença ou nome"
+                                                    class="form-control search-field mb-1 mb-md-0" value="Psicólogo"
+                                                    autocomplete="off" tabindex="1" type="text" name="q"
+                                                    data-id="autocomplete-search" />
+
+                                                <i
+                                                    class="svg-icon svg-icon-caret svg-icon-size-12 svg-icon-color-white icon-trigger"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M3.293 7.293a1 1 0 0 1 1.414 0L12 14.586l7.293-7.293a1 1 0 1 1 1.414 1.414l-8 8a1 1 0 0 1-1.414 0l-8-8a1 1 0 0 1 0-1.414Z" />
+                                                    </svg></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-5 col-12 city-col">
+                                            <div class="d-flex align-items-center">
+                                                <input placeholder="cidade ou região" value="Pelotas - RS"
+                                                    class="form-control search-field mb-1 mb-md-0" autocomplete="off"
+                                                    tabindex="2" type="text" name="loc"
+                                                    data-id="autocomplete-location" />
+
+                                                <i
+                                                    class="svg-icon svg-icon-caret svg-icon-size-12 svg-icon-color-white icon-trigger"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M3.293 7.293a1 1 0 0 1 1.414 0L12 14.586l7.293-7.293a1 1 0 1 1 1.414 1.414l-8 8a1 1 0 0 1-1.414 0l-8-8a1 1 0 0 1 0-1.414Z" />
+                                                    </svg></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-2 col-12 button-col">
+                                            <button class="btn btn-block btn-lg search-button btn-light"
+                                                title="Pesquisar" tabindex="3">
+
+                                                <i class="svg-icon svg-icon-search svg-icon-color-white"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M14 9.5a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0Zm-.665 5.249a6.5 6.5 0 1 1 1.414-1.414l4.958 4.958a1 1 0 0 1-1.414 1.414l-4.958-4.958Z" />
+                                                    </svg></i>
+
+                                                <span class="d-sm-none ml-0-5">Pesquisar</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </search-autocomplete>
+                            </div>
+                        </div>
+
+                        <a href="#" class="search-close-btn d-block d-md-none" data-toggle="collapse"
+                            data-id="serch-form-toggle" data-target="[data-id='navbar-search-collapse']"
+                            data-ga-event="click" data-ga-category="Doctor panel" data-ga-action="Klik w lupę"><i
+                                class="svg-icon svg-icon-close svg-icon-size-24 svg-icon-color-white"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M3.293 19.293a1 1 0 1 0 1.414 1.414L12 13.414l7.293 7.293a1 1 0 0 0 1.414-1.414L13.414 12l7.293-7.293a1 1 0 0 0-1.414-1.414L12 10.586 4.707 3.293a1 1 0 0 0-1.414 1.414L10.586 12l-7.293 7.293Z" />
+                                </svg></i></a>
+                    </div>
+                </div>
+
+                <div class="navbar-collapse align-items-center px-2 pr-md-0 collapse" data-id="navbar-right-collapse">
+                    <ul class="navbar-nav navbar-right align-items-md-center ml-auto" data-id="top-navigation"
+                        data-test-id="navbar">
+
+
+
+
+                        <li class="nav-item dropdown d-none d-md-block dp-native" data-test-id="navbar-my-account">
+                            <a class="nav-link justify-content-between" data-toggle="dropdown" href="#">
+                                <span class="mr-0-5">Minha conta</span>
+                                <i class="svg-icon svg-icon-caret svg-icon-size-12 svg-icon-color-white"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M3.293 7.293a1 1 0 0 1 1.414 0L12 14.586l7.293-7.293a1 1 0 1 1 1.414 1.414l-8 8a1 1 0 0 1-1.414 0l-8-8a1 1 0 0 1 0-1.414Z" />
+                                    </svg></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+
+
+
+                                <li class="dropdown-item  ">
+                                    <a class="dropdown-item-text text-wrap" data-mixpanel-event="click"
+                                        data-mixpanel-name="Dropdown menu link - Settings"
+                                        data-test-id="navbar-dropdown-settings"
+                                        href="/sua-conta/configuracoes">Configurações da conta</a>
+                                </li>
+
+                                <li class="dropdown-divider d-none d-md-block"></li>
+
+                                <li class="dropdown-item  ">
+                                    <a class="dropdown-item-text text-wrap" data-mixpanel-event="click"
+                                        data-mixpanel-name="Dropdown menu link - Favorite doctors"
+                                        href="/especialistas-salvos">Especialistas salvos</a>
+                                </li>
+
+                                <li class="dropdown-divider d-none d-md-block"></li>
+
+                                <li class="dropdown-item  ">
+                                    <a class="dropdown-item-text text-wrap" data-mixpanel-event="click"
+                                        data-mixpanel-name="Dropdown menu link - Patient panel"
+                                        href="/painel-de-pacientes">Minhas consultas</a>
+                                </li>
+
+                                <li class="dropdown-divider d-none d-md-block"></li>
+
+                                <li class="dropdown-item  ">
+                                    <a class="dropdown-item-text text-wrap" data-mixpanel-event="click"
+                                        data-mixpanel-name="Dropdown menu link - Logout"
+                                        data-test-id="navbar-dropdown-logout"
+                                        href="https://l.doctoralia.com.br/logout?redirect_uri=https%3A//www.doctoralia.com.br/auth/logout%3Fredirect_uri%3Dhttps%253A//www.doctoralia.com.br/pesquisa">Sair</a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+
+
+
+
+                        <li class="nav-item  d-md-none">
+                            <a class="nav-link justify-content-between" data-mixpanel-event="click"
+                                data-mixpanel-name="Dropdown menu link - Settings"
+                                data-test-id="navbar-dropdown-settings" href="/sua-conta/configuracoes">Configurações da
+                                conta</a>
+                        </li>
+
+                        <li class="dropdown-divider d-none d-md-block"></li>
+
+                        <li class="nav-item  d-md-none">
+                            <a class="nav-link justify-content-between" data-mixpanel-event="click"
+                                data-mixpanel-name="Dropdown menu link - Favorite doctors"
+                                href="/especialistas-salvos">Especialistas salvos</a>
+                        </li>
+
+                        <li class="dropdown-divider d-none d-md-block"></li>
+
+                        <li class="nav-item  d-md-none">
+                            <a class="nav-link justify-content-between" data-mixpanel-event="click"
+                                data-mixpanel-name="Dropdown menu link - Patient panel"
+                                href="/painel-de-pacientes">Minhas consultas</a>
+                        </li>
+
+                        <li class="dropdown-divider d-none d-md-block"></li>
+
+                        <li class="nav-item  d-md-none">
+                            <a class="nav-link justify-content-between" data-mixpanel-event="click"
+                                data-mixpanel-name="Dropdown menu link - Logout" data-test-id="navbar-dropdown-logout"
+                                href="https://l.doctoralia.com.br/logout?redirect_uri=https%3A//www.doctoralia.com.br/auth/logout%3Fredirect_uri%3Dhttps%253A//www.doctoralia.com.br/pesquisa">Sair</a>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+
+
+
+
+
+        <div data-id="abandoned-cart-vue-app">
+        </div>
+
+
+
+        <style>
+            .abandoned-cart-app {
+                height: 147px;
+            }
+
+            @media(min-width:992px) {
+                .abandoned-cart-app {
+                    height: 78px;
+                }
+            }
+        </style>
+
+        <script>
+            (function () {
+                var element = document.querySelector('[data-id="abandoned-cart-vue-app"]');
+                var data = ZLApp.Storage.local['booking-data'];
+
+                if (!(element instanceof HTMLElement) || !data || typeof JSON.parse(data) !== 'object') {
+                    return;
+                }
+
+                function hasVisitSlotDateValid() {
+                    var timestamp = new Date().getTime();
+                    var bookingData = JSON.parse(data);
+                    var visitTimestamp;
+
+                    if (!bookingData.visitSlotDateWithTimezone) {
+                        return false;
+                    }
+
+                    visitTimestamp = new Date(bookingData.visitSlotDateWithTimezone).getTime();
+
+                    return timestamp < visitTimestamp;
+                }
+
+                function renderTemplate() {
+                    var template = '\u003Cdiv\u0020class\u003D\u0022container\u002Dfluid\u0020p\u002D0\u0020bg\u002Dgray\u002D200\u0022\u003E\n\t\t\u003Cdiv\u0020class\u003D\u0022container\u0020py\u002D2\u0020px\u002D2\u0020px\u002Dmd\u002D1\u0022\u003E\n\t\t\t\u003Cdiv\u0020class\u003D\u0022d\u002Dflex\u0020justify\u002Dcontent\u002Dbetween\u0020small\u0020text\u002Dmuted\u0020mb\u002D0\u002D5\u0022\u003E\n\t\t\t\t\u003Cspan\u0020class\u003D\u0022pb\u002D0\u002D5\u0020text\u002Duppercase\u0020font\u002Dweight\u002Dbold\u0022\u003EAgendamento\u0020iniciado\u003C\/span\u003E\n\t\t\t\t\u003Cspan\u0020class\u003D\u0022pb\u002D0\u002D5\u0022\u0020role\u003D\u0022button\u0022\u0020data\u002Did\u003D\u0022abandoned\u002Dcart\u002Dclose\u0022\u003EIgnorar\u003C\/span\u003E\n\t\t\t\u003C\/div\u003E\n\t\t\t\u003Cdiv\u0020class\u003D\u0022card\u0020card\u002Dshadow\u002D1\u0020mx\u002D0\u0020card\u002Dborder\u0022\u003E\n\t\t\t\t\u003Cabandoned\u002Dcart\n\t\t\t\t\tclass\u003D\u0022abandoned\u002Dcart\u002Dapp\u0022\n\t\t\t\t\t\u003Atranslations\u003D\u0022\u007B\u0026quot\u003Babandonment_widget_title\u0026quot\u003B\u003A\u0026quot\u003BAgendamento\u0020iniciado\u0026quot\u003B,\u0026quot\u003Bdismiss\u002Dgeneric\u0026quot\u003B\u003A\u0026quot\u003BIgnorar\u0026quot\u003B,\u0026quot\u003Babandonment_widget_button\u0026quot\u003B\u003A\u0026quot\u003BConcluir\u0020agendamento\u0026quot\u003B,\u0026quot\u003Bopinion_numeral\u0026quot\u003B\u003A\u0026quot\u003Bopini\\u00e3o\u007Copini\\u00f5es\u0026quot\u003B\u007D\u0022\n\t\t\t\t\u003E\n\t\t\t\t\t\u003Cdiv\u0020class\u003D\u0022h\u002D100\u0020d\u002Dflex\u0020align\u002Ditems\u002Dcenter\u0020justify\u002Dcontent\u002Dcenter\u0022\u003E\n\t\t\t\t\t\t\u003Ci\u0020class\u003D\u0022svg\u002Dicon\u0020svg\u002Dicon\u002Dspinner\u0020svg\u002Dicon\u002Dsize\u002D20\u0020spinner\u0022\u0020\u003E\u003Csvg\u0020xmlns\u003D\u0022http\u003A\/\/www.w3.org\/2000\/svg\u0022\u0020width\u003D\u002224\u0022\u0020height\u003D\u002224\u0022\u0020fill\u003D\u0022none\u0022\u0020viewBox\u003D\u00220\u00200\u002024\u002024\u0022\u003E\u003Cpath\u0020fill\u003D\u0022url\u0028\u0023spinner\u002Dsvg\u002Da\u0029\u0022\u0020d\u003D\u0022M12\u00203c0\u002D.552.449\u002D1.005.998\u002D.95A10\u002010\u00200\u00200\u00201\u002012\u002022v\u002D2a7.999\u00207.999\u00200\u00200\u00200\u0020.997\u002D15.938C12.45\u00203.994\u002012\u00203.552\u002012\u00203Z\u0022\/\u003E\u003Cpath\u0020fill\u003D\u0022url\u0028\u0023spinner\u002Dsvg\u002Db\u0029\u0022\u0020d\u003D\u0022M12\u002022A10\u002010\u00200\u00200\u00201\u00205.344\u00204.537c.412\u002D.368\u00201.041\u002D.265\u00201.366.182.325.447.22\u00201.068\u002D.183\u00201.446A8\u00208\u00200\u00200\u00200\u002012\u002020v2Z\u0022\/\u003E\u003Cdefs\u003E\u003ClinearGradient\u0020id\u003D\u0022spinner\u002Dsvg\u002Da\u0022\u0020x1\u003D\u002212\u0022\u0020x2\u003D\u002212\u0022\u0020y1\u003D\u002220\u0022\u0020y2\u003D\u00223.5\u0022\u0020gradientUnits\u003D\u0022userSpaceOnUse\u0022\u003E\u003Cstop\u0020class\u003D\u0022spinner\u002Dstop\u002Dcolor\u0022\/\u003E\u003Cstop\u0020class\u003D\u0022spinner\u002Dstop\u002Dcolor\u0022\u0020offset\u003D\u00221\u0022\u0020stop\u002Dopacity\u003D\u00220\u0022\/\u003E\u003C\/linearGradient\u003E\u003ClinearGradient\u0020id\u003D\u0022spinner\u002Dsvg\u002Db\u0022\u0020x1\u003D\u002212\u0022\u0020x2\u003D\u002212\u0022\u0020y1\u003D\u00224.5\u0022\u0020y2\u003D\u002220\u0022\u0020gradientUnits\u003D\u0022userSpaceOnUse\u0022\u003E\u003Cstop\u0020class\u003D\u0022spinner\u002Dstop\u002Dcolor\u0022\/\u003E\u003Cstop\u0020class\u003D\u0022spinner\u002Dstop\u002Dcolor\u0022\u0020offset\u003D\u00221\u0022\/\u003E\u003C\/linearGradient\u003E\u003C\/defs\u003E\u003C\/svg\u003E\u003C\/i\u003E\n\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\u003C\/abandoned\u002Dcart\u003E\n\t\t\t\u003C\/div\u003E\n\t\t\u003C\/div\u003E\n\t\u003C\/div\u003E';
+
+                    element.insertAdjacentHTML('beforeend', template);
+                }
+
+                if (!hasVisitSlotDateValid()) {
+                    ZLApp.Storage.local.removeItem('booking-data');
+
+                    return;
+                }
+
+                requestAnimationFrame(renderTemplate);
+            }())
+        </script>
+
+
+        <div data-id=search-listing>
+
+
+
+            <div class="search-filters bg-white sticky" data-id="search-desktop-filters-app">
+                <desktop-filters-app>
+                    <div class="container d-flex py-1">
+
+
+                        <button class="btn btn-lg dropdown-disabled  btn-light mr-1 d-none d-xl-inline-flex">
+                            <i class="svg-icon svg-icon-video-consultation svg-icon-size-12 mr-0-5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M5 6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3l2.293 2.293c.63.63 1.707.184 1.707-.707V8.414c0-.89-1.077-1.337-1.707-.707L17 10V8a2 2 0 0 0-2-2H5Z" />
+                                </svg></i>
+
+                            Teleconsulta
+
+
+                            <i class="svg-icon svg-icon-caret svg-icon-size-12 ml-0-5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M3.293 7.293a1 1 0 0 1 1.414 0L12 14.586l7.293-7.293a1 1 0 1 1 1.414 1.414l-8 8a1 1 0 0 1-1.414 0l-8-8a1 1 0 0 1 0-1.414Z" />
+                                </svg></i>
+                        </button>
+
+
+                        <button class="btn btn-lg dropdown-disabled  btn-light mr-1 d-none d-xl-inline-flex">
+
+                            Convênios
+
+
+
+                            <i class="svg-icon svg-icon-caret svg-icon-size-12 ml-0-5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M3.293 7.293a1 1 0 0 1 1.414 0L12 14.586l7.293-7.293a1 1 0 1 1 1.414 1.414l-8 8a1 1 0 0 1-1.414 0l-8-8a1 1 0 0 1 0-1.414Z" />
+                                </svg></i>
+                        </button>
+
+
+                        <button class="btn btn-lg dropdown-disabled  btn-light mr-1 d-none d-xl-inline-flex">
+
+                            Datas disponíveis
+
+
+                            <i class="svg-icon svg-icon-caret svg-icon-size-12 ml-0-5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M3.293 7.293a1 1 0 0 1 1.414 0L12 14.586l7.293-7.293a1 1 0 1 1 1.414 1.414l-8 8a1 1 0 0 1-1.414 0l-8-8a1 1 0 0 1 0-1.414Z" />
+                                </svg></i>
+                        </button>
+
+
+                        <button class="btn btn-lg dropdown-disabled  btn-light mr-1 d-none d-xl-inline-flex">
+
+                            Bairros
+
+
+
+                            <i class="svg-icon svg-icon-caret svg-icon-size-12 ml-0-5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M3.293 7.293a1 1 0 0 1 1.414 0L12 14.586l7.293-7.293a1 1 0 1 1 1.414 1.414l-8 8a1 1 0 0 1-1.414 0l-8-8a1 1 0 0 1 0-1.414Z" />
+                                </svg></i>
+                        </button>
+
+
+
+
+
+
+
+
+
+
+                        <button class="d-xl-none btn btn-lg dropdown-disabled  btn-light" data-id="search-filters-btn"
+                            data-test-id="all-filters-btn">
+                            <i class="svg-icon svg-icon-filters svg-icon-size-12 mr-0-5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M3 18c0 .55.45 1 1 1h5v-2H4c-.55 0-1 .45-1 1ZM3 6c0 .55.45 1 1 1h9V5H4c-.55 0-1 .45-1 1Zm10 14v-1h7c.55 0 1-.45 1-1s-.45-1-1-1h-7v-1c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1ZM7 10v1H4c-.55 0-1 .45-1 1s.45 1 1 1h3v1c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1Zm14 2c0-.55-.45-1-1-1h-9v2h9c.55 0 1-.45 1-1Zm-5-3c.55 0 1-.45 1-1V7h3c.55 0 1-.45 1-1s-.45-1-1-1h-3V4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .55.45 1 1 1Z" />
+                                </svg></i>
+                            <span>
+                                Filtros
+                            </span>
+                            <i class="svg-icon svg-icon-caret svg-icon-size-12 ml-0-5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M3.293 7.293a1 1 0 0 1 1.414 0L12 14.586l7.293-7.293a1 1 0 1 1 1.414 1.414l-8 8a1 1 0 0 1-1.414 0l-8-8a1 1 0 0 1 0-1.414Z" />
+                                </svg></i>
+                        </button>
+
+                        <button class="d-none d-xl-flex btn btn-lg dropdown-disabled  btn-light">
+                            <i class="svg-icon svg-icon-filters svg-icon-size-12 mr-0-5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M3 18c0 .55.45 1 1 1h5v-2H4c-.55 0-1 .45-1 1ZM3 6c0 .55.45 1 1 1h9V5H4c-.55 0-1 .45-1 1Zm10 14v-1h7c.55 0 1-.45 1-1s-.45-1-1-1h-7v-1c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1ZM7 10v1H4c-.55 0-1 .45-1 1s.45 1 1 1h3v1c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1Zm14 2c0-.55-.45-1-1-1h-9v2h9c.55 0 1-.45 1-1Zm-5-3c.55 0 1-.45 1-1V7h3c.55 0 1-.45 1-1s-.45-1-1-1h-3V4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .55.45 1 1 1Z" />
+                                </svg></i>
+                            <span>Mais filtros</span>
+                            <i class="svg-icon svg-icon-caret svg-icon-size-12 ml-0-5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M3.293 7.293a1 1 0 0 1 1.414 0L12 14.586l7.293-7.293a1 1 0 1 1 1.414 1.414l-8 8a1 1 0 0 1-1.414 0l-8-8a1 1 0 0 1 0-1.414Z" />
+                                </svg></i>
+                        </button>
+
+
+                        <button class="btn btn-lg dropdown-disabled  btn-light ml-auto d-lg-none"
+                            data-id="search-map-btn" data-test-id="mobile-show-map" data-one-tracking-event="click"
+                            data-one-tracking-category="search" data-one-tracking-action="exploreContent"
+                            data-one-tracking-sub_action="expand" data-one-tracking-object_type="map"
+                            data-one-tracking-interface_section="map" data-one-tracking-entity_type=""
+                            data-one-tracking-entity_id="" data-one-tracking-address_id=""
+                            data-one-tracking-interface_element="" data-one-tracking-search_item_type="">
+                            <i class="svg-icon svg-icon-pin svg-icon-size-12 mr-0-5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 4.17 4.42 9.92 6.24 12.11.4.48 1.13.48 1.53 0C14.58 18.92 19 13.17 19 9c0-3.87-3.13-7-7-7Zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5Z" />
+                                </svg></i>
+                            Mapa
+                        </button>
+                    </div>
+                </desktop-filters-app>
+            </div>
+
+            <div data-id="search-filters-modal">
+                <filters-modal />
+            </div>
+
+            <main class="container" role="main" data-id="main-content">
+                <div></div>
+                <div>
+                    <div class="row mx-0" data-id="search-listing-container" data-test-id="search-listing-container">
+
+                        <div data-id="search-dynamic-map-app">
+                            <dynamic-map-app :is-consent-required=false />
+                        </div>
+
+                        <div data-id="mobile-calendar-modal-app">
+                            <mobile-calendar-modal-app />
+                        </div>
+
+                        <div class="col-xl-9 px-0" data-id="search-left-column">
+
+
+
+
+                            <div class="d-flex flex-column flex-md-row justify-content-between my-2 align-items-md-end">
+                                <div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h1 class="h3 mr-0-5 mb-0" data-test-id="search-headline">
+                                            Psicólogo, Pelotas - Rs
+                                        </h1>
+
+                                    </div>
+
+                                    <p class="mb-0">Agende online, sem custos adicionais.</p>
+
+                                </div>
+
+                            </div>
+
+
+                         
+
+
+
+
+                            <div class="d-sm-none d-md-flex">
+
+                            </div>
+
+
+
+
+
+                            <div id="search-content">
+                                <ul class="list-unstyled search-list" data-test-id="search-list">
+                                    <li class="has-cal-commercial has-address-nav">
+
+
+
+
+
+
+
+
+
+
+                                        <div class="card card-shadow-1 mb-1" data-ga4-search-item-type="organic"
+                                            data-ga4-entity-type="doctor" data-id="result-item"
+                                            data-test-id="result-item" data-test-entity-type="doctor"
+                                            data-uniq-id="result-item-565178" data-address-id="639420"
+                                            data-is-online-only="false" data-result-id="565178"
+                                            data-doctor-name="Prof. Isane Larrosa Cardoso D&#039;Avila"
+                                            data-doctor-url="/profile.html"
+                                            data-test-is-commercial="0" data-is-first-class="0" itemscope
+                                            itemtype="http://schema.org/Physician" data-eec='true'
+                                            data-eec-entity-type='doctor' data-eec-entity-id='565178'
+                                            data-eec-specialization-ids='76' data-eec-specialization-name='Psicóloga'
+                                            data-eec-stars-rating='5' data-eec-opinions-count='52'
+                                            data-eec-position='12' data-eec-result-type='regular' data-eec-has-photo>
+                                            <div class="card-body p-0">
+                                                <div class="row mx-0 flex-column flex-md-row">
+                                                    <div class="col-lg-6 result-column p-2"
+                                                        data-test-id="result-items-details" data-id="result-info">
+                                    
+                                                        <div class="dp-doctor-card dp-doctor-card-md">
+                                                            <div class="media">
+                                                                <div class="pr-1">
+                                                                    <a href="/profile.html"
+                                                                        data-id="address-context-cta"
+                                                                        data-ga-event="click"
+                                                                        data-ga-category="NS Doctor Card"
+                                                                        data-ga-action="Detail click"
+                                                                        data-ga-label="Photo"
+                                                                        data-eecommerce-action="product-click"
+                                                                        data-eec-select-item>
+                                                                        <span
+                                                                            class="mb-1 avatar avatar-circle no-background"
+                                                                            data-tracking-id="result-card-image"
+                                                                            data-eecommerce-action="product-click">
+                                                                            <img itemprop="image"
+                                                                                alt="Isane Larrosa Cardoso D&#039;Avila, Psicólogo Pelotas"
+                                                                                src="//platform.docplanner.com/img/general/doctor/doctor-default-80-80.png?1981952613"
+                                                                                data-src="//s3-sa-east-1.amazonaws.com/doctoralia.com.br/doctor/f2cc76/f2cc763dd1b68a12e118c548eac36d5e_medium_square.jpg"
+                                                                                itemprop="image" />
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="media-body">
+                                    
+                                                                    <h3 class="h4 mb-0 flex-wrap">
+                                                                        <a href="/profile.html"
+                                                                            data-id="address-context-cta"
+                                                                            class="text-body" data-eec-select-item>
+                                                                            <span data-tracking-id="result-card-name"
+                                                                                data-ga-event="click"
+                                                                                data-ga-category="NS Doctor Card"
+                                                                                data-ga-action="Detail click"
+                                                                                data-ga-label="Doctor Name"
+                                                                                data-eecommerce-action="product-click"
+                                                                                itemprop="name">
+                                                                                Prof. Isane Larrosa Cardoso D'Avila
+                                                                            </span>
+                                                                        </a>
+                                                                        <span data-toggle="tooltip"
+                                                                            title="Este médico foi verificado">
+                                                                            <i
+                                                                                class="svg-icon svg-icon-check-filled svg-icon-size-12 svg-icon-color-secondary"><svg
+                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                    width="24" height="24"
+                                                                                    viewBox="0 0 24 24">
+                                                                                    <path
+                                                                                        d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm6.03-13.47-8 8a.75.75 0 0 1-1.06 0l-3-3a.75.75 0 1 1 1.06-1.06l2.47 2.47 7.47-7.47a.75.75 0 1 1 1.06 1.06Z" />
+                                                                                </svg></i>
+                                                                        </span>
+                                                                    </h3>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                                                    <div><span data-id="profile-specializations-565178">
+                                                                            <h4
+                                                                                class="h5 font-weight-normal mb-0 d-inline">
+                                                                                <span
+                                                                                    data-test-id="doctor-specializations">Psicóloga</span>
+                                                                            </h4><span class="hide"> (Psicologia
+                                                                                clínica, Terapia cognitivo
+                                                                                comportamental, Mindfulness,
+                                                                                Neurociência)&nbsp;</span><u
+                                                                                class="ml-0-5"><a href="#show-more"
+                                                                                    class="text-muted"
+                                                                                    data-target="[data-id='profile-specializations-565178']"
+                                                                                    data-display="inline"
+                                                                                    data-text-more="Mais"
+                                                                                    data-text-less="Menos">Mais</a></u>
+                                                                        </span></div>
+                                    
+                                                                    <a href="/profile.html"
+                                                                        data-tracking-id="result-card-reviews"
+                                                                        data-ga-event="click"
+                                                                        data-ga-category="NS Doctor Card"
+                                                                        data-ga-action="Detail click"
+                                                                        data-ga-label="Reviews"
+                                                                        data-eecommerce-action="product-click"
+                                                                        data-eec-select-item>
+                                                                        <span class="mt-0-5 text-muted rating rating-md"
+                                                                            data-score="5"
+                                                                            data-eecommerce-action="product-click">
+                                                                            <span
+                                                                                class="opinion-numeral font-weight-normal"
+                                                                                data-eecommerce-action="product-click">
+                                                                                52
+                                                                                opiniões
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                    
+                                                        <span class="h5 font-weight-normal mb-0">
+                                                            CRP 07/16092
+                                                        </span>
+                                    
+                                    
+                                    
+                                    
+                                                        <div class="mt-1 mb-1">
+                                                            <button class="btn btn-light btn-md btn-block disabled"
+                                                                data-id="check-your-insurance-button"
+                                                                data-doctor-id="565178"
+                                                                data-available-insurances-ids="[]">
+                                                                <i
+                                                                    class="svg-icon svg-icon-shield svg-icon-size-18 svg-icon-color-gray-500"><svg
+                                                                        xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                        height="24" viewBox="0 0 24 24">
+                                                                        <path
+                                                                            d="m11.19 1.36-7 3.11C3.47 4.79 3 5.51 3 6.3V11c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V6.3c0-.79-.47-1.51-1.19-1.83l-7-3.11c-.51-.23-1.11-.23-1.62 0ZM12 11.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8Z" />
+                                                                    </svg></i>
+                                                                <span class="ml-1">Veja se o seu convênio é
+                                                                    aceito</span>
+                                                            </button>
+                                                        </div>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                                        <div class="doctor-card-address" data-id="doctor-card-address"
+                                                            data-uniq-id="doctor-card-address-565178">
+                                                            <div class="nav-responsive">
+                                                                <ul class="nav nav-tabs nav-tabs-border-bottom mb-1-5"
+                                                                    data-nav-menu="address-navigation-menu-565178"
+                                                                    data-test-id="address-navigation-menu">
+                                    
+                                    
+                                    
+                                                                    <li class="nav-item"
+                                                                        data-tracking-id="result-card-address"
+                                                                        data-nav-link="639420" data-result-id="565178"
+                                                                        data-context="doctor"
+                                                                        data-is-online-only="false"
+                                                                        data-ga-event="click"
+                                                                        data-ga-category="NS Doctor Card"
+                                                                        data-ga-action="Address Interaction"
+                                                                        data-ga-label="Address Change"
+                                                                        role="presentation">
+                                                                        <a class="nav-link active" role="button"
+                                                                            data-test-id="address-1">
+                                                                            Endereço </a>
+                                                                    </li>
+                                    
+                                    
+                                    
+                                                                    <li class="nav-item"
+                                                                        data-tracking-id="result-card-address"
+                                                                        data-nav-link="990432" data-result-id="565178"
+                                                                        data-context="doctor" data-is-online-only="true"
+                                                                        data-ga-event="click"
+                                                                        data-ga-category="NS Doctor Card"
+                                                                        data-ga-action="Address Interaction"
+                                                                        data-ga-label="Address Change"
+                                                                        role="presentation">
+                                                                        <a class="nav-link " role="button"
+                                                                            data-test-id="address-1">
+                                                                            <i
+                                                                                class="svg-icon svg-icon-video-consultation svg-icon-size-16 mr-0-5"><svg
+                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                    width="24" height="24"
+                                                                                    viewBox="0 0 24 24">
+                                                                                    <path
+                                                                                        d="M5 6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3l2.293 2.293c.63.63 1.707.184 1.707-.707V8.414c0-.89-1.077-1.337-1.707-.707L17 10V8a2 2 0 0 0-2-2H5Z" />
+                                                                                </svg></i>
+                                                                            Teleconsulta </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                    
+                                                            <div data-id="address-navigation-target"
+                                                                data-test-id="address-navigation-target"
+                                                                data-target-id="639420">
+                                    
+                                                                <div class="d-flex align-items-top"
+                                                                    data-id="result-address-item" data-lat="-31.7577362"
+                                                                    data-lng="-52.3354187" data-address-id="639420"
+                                                                    data-result-id="565178" data-is-first-class=""
+                                                                    data-is-online-only="" data-context="doctor"
+                                                                    itemprop="address" itemscope
+                                                                    itemtype="http://schema.org/PostalAddress">
+                                                                    <div class="pr-1">
+                                                                        <i
+                                                                            class="svg-icon svg-icon-pin svg-icon-size-16 svg-icon-color-gray-900"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                width="24" height="24"
+                                                                                viewBox="0 0 24 24">
+                                                                                <path
+                                                                                    d="M12 2C8.13 2 5 5.13 5 9c0 4.17 4.42 9.92 6.24 12.11.4.48 1.13.48 1.53 0C14.58 18.92 19 13.17 19 9c0-3.87-3.13-7-7-7Zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5Z" />
+                                                                            </svg></i>
+                                                                    </div>
+                                                                    <div class="overflow-hidden">
+                                                                        <p class="m-0 d-flex align-items-center">
+                                                                            <span class="text-truncate">Rua Padre
+                                                                                Anchieta 3210, Pelotas</span>
+                                                                            <span class="ml-0-5 mr-0-5">&bullet;</span>
+                                                                            <a class="text-muted"
+                                                                                data-test-id="address-map-link"
+                                                                                href="https://www.google.com/maps/search/?api=1&query=-31.7577362,-52.3354187"
+                                                                                rel="noreferrer" target="_blank">
+                                                                                <u>Mapa</u>
+                                                                            </a>
+                                                                        </p>
+                                    
+                                    
+                                    
+                                                                        <p class="m-0 text-truncate text-muted font-weight-bold address-details"
+                                                                            data-test-id="entity-name">
+                                                                            Consultório Particular Isane Davila
+                                                                        </p>
+                                    
+                                    
+                                                                        <meta itemprop="streetAddress"
+                                                                            data-test-id="street-address"
+                                                                            content="Rua Padre Anchieta 3210">
+                                                                        <meta itemprop="addressLocality"
+                                                                            data-test-id="city-address"
+                                                                            content="Pelotas">
+                                                                        <meta itemprop="addressRegion"
+                                                                            data-test-id="province-address"
+                                                                            content="Rio Grande do Sul RS">
+                                                                    </div>
+                                                                </div>
+                                    
+                                                                <div class="d-flex align-items-center mt-1">
+                                                                    <div class="pr-1">
+                                                                        <i
+                                                                            class="svg-icon svg-icon-stethoscope svg-icon-size-16 svg-icon-color-gray-900"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                width="24" height="24"
+                                                                                viewBox="0 0 24 24">
+                                                                                <path
+                                                                                    d="M11 2a1 1 0 1 0 0 2h1v7c0 1.55-1.453 3-3.5 3C6.453 14 5 12.55 5 11V4h1a1 1 0 0 0 0-2H4a1 1 0 0 0-1 1v8c0 2.536 2.013 4.496 4.5 4.916V19c0 .546.195 1.295.757 1.919C8.847 21.575 9.758 22 11 22h5c.493 0 1.211-.14 1.834-.588C18.51 20.925 19 20.125 19 19v-1.17a3.001 3.001 0 1 0-2 0V19c0 .474-.175.674-.334.788-.21.152-.493.212-.666.212h-5c-.758 0-1.097-.242-1.257-.419A.945.945 0 0 1 9.5 19v-3.084c2.487-.42 4.5-2.38 4.5-4.916V3a1 1 0 0 0-1-1h-2Zm7 14a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
+                                                                            </svg></i>
+                                                                    </div>
+                                                                    <div
+                                                                        class="d-flex flex-grow-1 justify-content-between overflow-hidden">
+                                                                        <p class="m-0 pr-0-5 text-truncate"
+                                                                            itemprop="availableService"
+                                                                            data-test-id="available-service"
+                                                                            itemtype="https://schema.org/MedicalTest">
+                                                                            Consulta Psicologia
+                                                                        </p>
+                                                                        <p class="m-0 text-nowrap font-weight-bold">
+                                                                            a partir de R$ 200
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                    
+                                    
+                                    
+                                                                <div class="calendar-availability d-md-none mt-1"
+                                                                    data-id="calendar-availability">
+                                                                    <calendar-availability-app address-id="639420"
+                                                                        address-calendar-state="missing-calendar"
+                                                                        :is-online-only="false" result-id="565178"
+                                                                        result-name="Prof. Isane Larrosa Cardoso D&#039;Avila"
+                                                                        context="doctor"
+                                                                        url="/profile.html"
+                                                                        :has-phone="0"
+                                                                        :preferred-address-service-id="null" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="hide" data-id="address-navigation-target"
+                                                                data-test-id="address-navigation-target"
+                                                                data-target-id="990432">
+                                    
+                                    
+                                                                <div class="d-flex align-items-center mt-1">
+                                                                    <div class="pr-1">
+                                                                        <i
+                                                                            class="svg-icon svg-icon-stethoscope svg-icon-size-16 svg-icon-color-gray-900"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                width="24" height="24"
+                                                                                viewBox="0 0 24 24">
+                                                                                <path
+                                                                                    d="M11 2a1 1 0 1 0 0 2h1v7c0 1.55-1.453 3-3.5 3C6.453 14 5 12.55 5 11V4h1a1 1 0 0 0 0-2H4a1 1 0 0 0-1 1v8c0 2.536 2.013 4.496 4.5 4.916V19c0 .546.195 1.295.757 1.919C8.847 21.575 9.758 22 11 22h5c.493 0 1.211-.14 1.834-.588C18.51 20.925 19 20.125 19 19v-1.17a3.001 3.001 0 1 0-2 0V19c0 .474-.175.674-.334.788-.21.152-.493.212-.666.212h-5c-.758 0-1.097-.242-1.257-.419A.945.945 0 0 1 9.5 19v-3.084c2.487-.42 4.5-2.38 4.5-4.916V3a1 1 0 0 0-1-1h-2Zm7 14a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
+                                                                            </svg></i>
+                                                                    </div>
+                                                                    <div
+                                                                        class="d-flex flex-grow-1 justify-content-between overflow-hidden">
+                                                                        <p class="m-0 pr-0-5 text-truncate"
+                                                                            itemprop="availableService"
+                                                                            data-test-id="available-service"
+                                                                            itemtype="https://schema.org/MedicalTest">
+                                                                            Consulta Psicologia
+                                                                        </p>
+                                                                        <p class="m-0 text-nowrap font-weight-bold">
+                                                                            R$ 200
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                    
+                                    
+                                    
+                                                                <div class="calendar-availability d-md-none mt-1"
+                                                                    data-id="calendar-availability">
+                                                                    <calendar-availability-app address-id="990432"
+                                                                        address-calendar-state="missing-calendar"
+                                                                        :is-online-only="true" result-id="565178"
+                                                                        result-name="Prof. Isane Larrosa Cardoso D&#039;Avila"
+                                                                        context="doctor"
+                                                                        url="/profile.html"
+                                                                        :has-phone="0"
+                                                                        :preferred-address-service-id="null" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                    
+                                                    <div class="col-lg-6 pr-2" data-test-id="result-items-calendar">
+                                    
+                                    
+                                                        <div class="d-none d-md-block" data-id="search-calendar">
+                                                            <calendar-app result-id="565178" address-id="639420"
+                                                                address-calendar-state="missing-calendar"
+                                                                :is-online-only="false" :initial-rows-value="5"
+                                                                :preferred-address-service-id="null"
+                                                                url="/profile.html"
+                                                                context="doctor" ga4-tracking-search-item-type="organic"
+                                                                ga4-tracking-entity-type="doctor" />
+                                                        </div>
+                                    
+                                                        <div class="d-none d-md-block" data-id="search-calendar">
+                                                            <calendar-app result-id="565178" address-id="990432"
+                                                                address-calendar-state="missing-calendar"
+                                                                :is-online-only="true" :initial-rows-value="5"
+                                                                :preferred-address-service-id="null"
+                                                                url="/profile.html"
+                                                                context="doctor" ga4-tracking-search-item-type="organic"
+                                                                ga4-tracking-entity-type="doctor" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+
+                            </ul>
+                            </div>
+
+
+                            <div data-id="dp-notifications-vue">
+                                <dp-notifications-container />
+                            </div>
+
+
+                        </div>
+
+                      
+                    </div>
+
+
+
+
+
+
+                    <div class="modal fade modal-scrollable modal-stick-bottom-xs" id="rebooking-badge-modal">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="modal-title h4">
+                                        Pacientes fiéis
+                                    </div>
+                                    <button class="close" data-dismiss="modal" aria-hidden="true">
+                                        <i
+                                            class="svg-icon svg-icon-negative-filled svg-icon-size-20 svg-icon-color-gray-500"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm3.707-13.707a1 1 0 0 1 0 1.414L13.414 12l2.293 2.293a1 1 0 0 1-1.414 1.414L12 13.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L10.586 12 8.293 9.707a1 1 0 0 1 1.414-1.414L12 10.586l2.293-2.293a1 1 0 0 1 1.414 0Z" />
+                                            </svg></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Pacientes deste especialista retornam para outras consultas.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-md btn-primary" data-dismiss="modal" aria-hidden="true">
+                                        Fechar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade modal-scrollable modal-stick-bottom-xs" id="first-class-modal">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="modal-title h4">
+                                        First Class
+                                    </div>
+                                    <button class="close" data-dismiss="modal" aria-hidden="true">
+                                        <i
+                                            class="svg-icon svg-icon-negative-filled svg-icon-size-20 svg-icon-color-gray-500"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm3.707-13.707a1 1 0 0 1 0 1.414L13.414 12l2.293 2.293a1 1 0 0 1-1.414 1.414L12 13.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L10.586 12 8.293 9.707a1 1 0 0 1 1.414-1.414L12 10.586l2.293-2.293a1 1 0 0 1 1.414 0Z" />
+                                            </svg></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Este perfil corresponde aos seus critérios de pesquisa selecionados, aparece nas
+                                        primeiras opções devido à disponibilidade, opiniões, perfil completo e plano de
+                                        assinatura do profissional.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-md btn-primary" data-dismiss="modal" aria-hidden="true">
+                                        Fechar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div data-id="search-results-dialogs-vue">
+                        <dp-dialogs-container />
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+        <div class="push-footer"></div>
+    </div>
+
+
+
+
+
+
+    <script type="application/ld+json">
+	{"@context":"https:\/\/schema.org","@type":"Organization","url":"https:\/\/www.doctoralia.com.br\/","logo":"https:\/\/www.doctoralia.com.br\/img\/br\/logo\/logo-default-br.svg?v=4","legalName":"Doctoralia Brasil Servi\u00e7os Online e Software Ltda","brand":{"@type":"Brand","name":"Doctoralia"}}
+</script>
+
+   
+</body>
+
+</html>

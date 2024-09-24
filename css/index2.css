@@ -1,0 +1,1329 @@
+.dp-carousel .tns-nav {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2px;
+    margin-top: 10px;
+    min-height: 12px
+}
+
+.dp-carousel .tns-nav button {
+    background-color: #dcdfe3;
+    border: 0;
+    border-radius: 50%;
+    height: 8px;
+    margin-left: 6px;
+    padding: 0;
+    width: 8px
+}
+
+.dp-carousel .tns-nav button.tns-nav-active {
+    background-color: #2600ff;
+    box-shadow: 0 0 0 2px #2600ff
+}
+
+.dp-carousel .tns-nav button:hover:not(.tns-nav-active) {
+    background-color: #98a1ab
+}
+
+.dp-carousel .tns-nav button:active,
+.dp-carousel .tns-nav button:focus {
+    outline: none
+}
+
+.dp-carousel-nav {
+    position: absolute;
+    top: calc(50% - 12px);
+    transform: translateY(-50%);
+    z-index: 1
+}
+
+.dp-carousel-nav.dp-carousel-nav-prev {
+    left: -10px
+}
+
+.dp-carousel-nav.dp-carousel-nav-next {
+    right: -10px
+}
+
+.dp-carousel-nav:hover:not([disabled]) {
+    background-color: #5b6a79
+}
+
+.dp-carousel-nav[disabled] {
+    visibility: hidden
+}
+
+.avatar-style {
+    display: block;
+    position: relative
+}
+
+.avatar-style:before {
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, .25);
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 10
+}
+
+.avatar-style img,
+.avatar-style:before {
+    border-radius: 4px;
+    height: 100%;
+    width: 100%
+}
+
+.avatar-style.no-border:before {
+    box-shadow: none
+}
+
+html[region] .logo-zl {
+    background-size: 100% auto
+}
+
+html[region] .logo-zl.default {
+    background-image: url('//platform.docplanner.com/img/en/logo/logo-default-en.svg?v=4')
+}
+
+html[region] .logo-zl.white {
+    background-image: url('//platform.docplanner.com/img/en/logo/logo-white-en.svg?v=4')
+}
+
+html[region] .logo-zl.small {
+    width: 148px
+}
+
+html[region] .logo-zl.medium {
+    width: 218px
+}
+
+.dp-logo svg {
+    display: block
+}
+
+.dp-logo.green svg path {
+    fill: #2600ff
+}
+
+.dp-logo.blue svg path {
+    fill: #3d83df
+}
+
+.dp-logo.white svg path {
+    fill: #fff
+}
+
+.dp-logo.dp-logo-general.small svg {
+    width: 150px
+}
+
+.dp-logo.dp-logo-general.medium svg {
+    width: 210px
+}
+
+.dp-logo.dp-logo-ar.small svg {
+    width: 150px
+}
+
+.dp-logo.dp-logo-ar.medium svg {
+    width: 210px
+}
+
+.dp-logo.dp-logo-br.small svg {
+    width: 150px
+}
+
+.dp-logo.dp-logo-br.medium svg {
+    width: 210px
+}
+
+.dp-logo.dp-logo-cl.small svg {
+    width: 150px
+}
+
+.dp-logo.dp-logo-cl.medium svg {
+    width: 210px
+}
+
+.dp-logo.dp-logo-co.small svg {
+    width: 150px
+}
+
+.dp-logo.dp-logo-co.medium svg {
+    width: 210px
+}
+
+.dp-logo.dp-logo-es.small svg {
+    width: 150px
+}
+
+.dp-logo.dp-logo-es.medium svg {
+    width: 210px
+}
+
+.dp-logo.dp-logo-cz.small svg {
+    width: 167px
+}
+
+.dp-logo.dp-logo-cz.medium svg {
+    width: 234px
+}
+
+.dp-logo.dp-logo-it.small svg {
+    width: 150px
+}
+
+.dp-logo.dp-logo-it.medium svg {
+    width: 210px
+}
+
+.dp-logo.dp-logo-mx.small svg {
+    width: 150px
+}
+
+.dp-logo.dp-logo-mx.medium svg {
+    width: 210px
+}
+
+.dp-logo.dp-logo-pe.small svg {
+    width: 150px
+}
+
+.dp-logo.dp-logo-pe.medium svg {
+    width: 210px
+}
+
+.dp-logo.dp-logo-pl.small svg {
+    width: 170px
+}
+
+.dp-logo.dp-logo-pl.medium svg {
+    width: 242px
+}
+
+.dp-logo.dp-logo-pt.small svg {
+    width: 150px
+}
+
+.dp-logo.dp-logo-pt.medium svg {
+    width: 210px
+}
+
+.dp-logo.dp-logo-tr.small svg {
+    width: 191px
+}
+
+.dp-logo.dp-logo-tr.medium svg {
+    width: 270px
+}
+
+.dp-logo.dp-logo-de.small svg {
+    width: 110px
+}
+
+.dp-logo.dp-logo-de.medium svg {
+    width: 170px
+}
+
+html[region=general] .logo-zl.default {
+    background-image: url('//platform.docplanner.com/img/general/logo/logo-default-general.svg?v=7')
+}
+
+html[region=general] .logo-zl.white {
+    background-image: url('//platform.docplanner.com/img/general/logo/logo-white-general.svg?v=7')
+}
+
+html[region=general] .logo-zl.small {
+    width: 150px
+}
+
+html[region=general] .logo-zl.medium {
+    width: 210px
+}
+
+html[region=ar] .logo-zl.default {
+    background-image: url('//platform.docplanner.com/img/ar/logo/logo-default-ar.svg?v=7')
+}
+
+html[region=ar] .logo-zl.white {
+    background-image: url('//platform.docplanner.com/img/ar/logo/logo-white-ar.svg?v=7')
+}
+
+html[region=ar] .logo-zl.small {
+    width: 150px
+}
+
+html[region=ar] .logo-zl.medium {
+    width: 210px
+}
+
+html[region=br] .logo-zl.default {
+    background-image: url('//platform.docplanner.com/img/br/logo/logo-default-br.svg?v=7')
+}
+
+html[region=br] .logo-zl.white {
+    background-image: url('//platform.docplanner.com/img/br/logo/logo-white-br.svg?v=7')
+}
+
+html[region=br] .logo-zl.small {
+    width: 150px
+}
+
+html[region=br] .logo-zl.medium {
+    width: 210px
+}
+
+html[region=cl] .logo-zl.default {
+    background-image: url('//platform.docplanner.com/img/cl/logo/logo-default-cl.svg?v=7')
+}
+
+html[region=cl] .logo-zl.white {
+    background-image: url('//platform.docplanner.com/img/cl/logo/logo-white-cl.svg?v=7')
+}
+
+html[region=cl] .logo-zl.small {
+    width: 150px
+}
+
+html[region=cl] .logo-zl.medium {
+    width: 210px
+}
+
+html[region=co] .logo-zl.default {
+    background-image: url('//platform.docplanner.com/img/co/logo/logo-default-co.svg?v=7')
+}
+
+html[region=co] .logo-zl.white {
+    background-image: url('//platform.docplanner.com/img/co/logo/logo-white-co.svg?v=7')
+}
+
+html[region=co] .logo-zl.small {
+    width: 150px
+}
+
+html[region=co] .logo-zl.medium {
+    width: 210px
+}
+
+html[region=es] .logo-zl.default {
+    background-image: url('//platform.docplanner.com/img/es/logo/logo-default-es.svg?v=7')
+}
+
+html[region=es] .logo-zl.white {
+    background-image: url('//platform.docplanner.com/img/es/logo/logo-white-es.svg?v=7')
+}
+
+html[region=es] .logo-zl.small {
+    width: 150px
+}
+
+html[region=es] .logo-zl.medium {
+    width: 210px
+}
+
+html[region=cz] .logo-zl.default {
+    background-image: url('//platform.docplanner.com/img/cz/logo/logo-default-cz.svg?v=7')
+}
+
+html[region=cz] .logo-zl.white {
+    background-image: url('//platform.docplanner.com/img/cz/logo/logo-white-cz.svg?v=7')
+}
+
+html[region=cz] .logo-zl.small {
+    width: 167px
+}
+
+html[region=cz] .logo-zl.medium {
+    width: 234px
+}
+
+html[region=it] .logo-zl.default {
+    background-image: url('//platform.docplanner.com/img/it/logo/logo-default-it.svg?v=7')
+}
+
+html[region=it] .logo-zl.white {
+    background-image: url('//platform.docplanner.com/img/it/logo/logo-white-it.svg?v=7')
+}
+
+html[region=it] .logo-zl.small {
+    width: 150px
+}
+
+html[region=it] .logo-zl.medium {
+    width: 210px
+}
+
+html[region=mx] .logo-zl.default {
+    background-image: url('//platform.docplanner.com/img/mx/logo/logo-default-mx.svg?v=7')
+}
+
+html[region=mx] .logo-zl.white {
+    background-image: url('//platform.docplanner.com/img/mx/logo/logo-white-mx.svg?v=7')
+}
+
+html[region=mx] .logo-zl.small {
+    width: 150px
+}
+
+html[region=mx] .logo-zl.medium {
+    width: 210px
+}
+
+html[region=pe] .logo-zl.default {
+    background-image: url('//platform.docplanner.com/img/pe/logo/logo-default-pe.svg?v=7')
+}
+
+html[region=pe] .logo-zl.white {
+    background-image: url('//platform.docplanner.com/img/pe/logo/logo-white-pe.svg?v=7')
+}
+
+html[region=pe] .logo-zl.small {
+    width: 150px
+}
+
+html[region=pe] .logo-zl.medium {
+    width: 210px
+}
+
+html[region=pl] .logo-zl.default {
+    background-image: url('//platform.docplanner.com/img/pl/logo/logo-default-pl.svg?v=7')
+}
+
+html[region=pl] .logo-zl.white {
+    background-image: url('//platform.docplanner.com/img/pl/logo/logo-white-pl.svg?v=7')
+}
+
+html[region=pl] .logo-zl.small {
+    width: 170px
+}
+
+html[region=pl] .logo-zl.medium {
+    width: 242px
+}
+
+html[region=pt] .logo-zl.default {
+    background-image: url('//platform.docplanner.com/img/pt/logo/logo-default-pt.svg?v=7')
+}
+
+html[region=pt] .logo-zl.white {
+    background-image: url('//platform.docplanner.com/img/pt/logo/logo-white-pt.svg?v=7')
+}
+
+html[region=pt] .logo-zl.small {
+    width: 150px
+}
+
+html[region=pt] .logo-zl.medium {
+    width: 210px
+}
+
+html[region=tr] .logo-zl.default {
+    background-image: url('//platform.docplanner.com/img/tr/logo/logo-default-tr.svg?v=7')
+}
+
+html[region=tr] .logo-zl.white {
+    background-image: url('//platform.docplanner.com/img/tr/logo/logo-white-tr.svg?v=7')
+}
+
+html[region=tr] .logo-zl.small {
+    width: 191px
+}
+
+html[region=tr] .logo-zl.medium {
+    width: 270px
+}
+
+html[region=de] .logo-zl.default {
+    background-image: url('//platform.docplanner.com/img/de/logo/logo-default-de.svg?v=7')
+}
+
+html[region=de] .logo-zl.white {
+    background-image: url('//platform.docplanner.com/img/de/logo/logo-white-de.svg?v=7')
+}
+
+html[region=de] .logo-zl.small {
+    width: 110px
+}
+
+html[region=de] .logo-zl.medium {
+    width: 170px
+}
+
+.visit-hour-link {
+    color: #1662c6;
+    font-weight: 700;
+    text-decoration: underline
+}
+
+.visit-hour-link:focus,
+.visit-hour-link:hover {
+    color: #196ddd;
+    outline: none
+}
+
+.visit-hour-link:active {
+    outline: none
+}
+
+.visit-hour-link.btn-hover:hover {
+    background: #3d83df;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none
+}
+
+body {
+    background: #edeff2
+}
+
+@media(width >=1010px)and (width <=1040px) {
+    body {
+        overflow-x: hidden !important
+    }
+}
+
+[placeholder]::-webkit-input-placeholder {
+    color: #98a1ab
+}
+
+[placeholder]:-moz-placeholder,
+[placeholder]::-moz-placeholder {
+    color: #98a1ab
+}
+
+[placeholder]:-moz-placeholder-shown {
+    color: #98a1ab
+}
+
+[placeholder]:placeholder-shown {
+    color: #98a1ab
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+    color: #dcdfe3
+}
+
+[placeholder]:focus:-moz-placeholder,
+[placeholder]:focus::-moz-placeholder {
+    color: #dcdfe3
+}
+
+[placeholder]:focus:-moz-placeholder-shown {
+    color: #dcdfe3
+}
+
+[placeholder]:focus:placeholder-shown {
+    color: #dcdfe3
+}
+
+main[role=main] {
+    padding-bottom: 10px
+}
+
+main[role=main].no-breadcrumbs {
+    padding-top: 20px
+}
+
+.text-error {
+    color: #e74c3c
+}
+
+img[data-src] {
+    background: #f7f9fa;
+    text-indent: -9999vh
+}
+
+img.lazyload:not([src]) {
+    visibility: hidden
+}
+
+#search .form-control {
+    border-radius: 0;
+    border-width: 0;
+    color: #1b2734;
+    font-weight: 400;
+    height: 40px;
+    padding-right: 33px;
+    position: static
+}
+
+#search .form-control[name=q] {
+    border-radius: 4px 0 0 4px
+}
+
+#search .icon-trigger {
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 33px
+}
+
+#search .icon-trigger>svg {
+    height: 12px;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(50%);
+    width: 12px
+}
+
+#search .specialists-col {
+    padding-right: 2px
+}
+
+#search .city-col {
+    padding: 0 2px
+}
+
+#search .button-col {
+    padding-left: 2px
+}
+
+#search .autocomplete-results-container {
+    margin: 0 -1px;
+    position: relative
+}
+
+@media(min-width:768px) {
+    #search .search-button {
+        border-color: transparent
+    }
+}
+
+@media(max-width:767.98px) {
+
+    #search .button-col,
+    #search .city-col,
+    #search .specialists-col {
+        padding: 0 10px
+    }
+
+    #search .form-control {
+        border-radius: 4px
+    }
+
+    #search .typeahead.dropdown-menu {
+        left: 0 !important;
+        width: 100%
+    }
+}
+
+.transparent-background {
+    background: transparent
+}
+
+hr.dotted {
+    border-top: 1px dotted #98a1ab
+}
+
+.uploadcare-dialog-normal-text {
+    width: 600px
+}
+
+[data-id=js-link] {
+    cursor: pointer
+}
+
+.impersonate-bar {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000
+}
+
+.dropdown-breadcrumb-menu {
+    width: 550px
+}
+
+.dropdown-breadcrumb__element {
+    width: 50%
+}
+
+.dropdown-breadcrumb>.dropdown-breadcrumb__element>a {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.dropdown-breadcrumb__divider {
+    width: 100%
+}
+
+.patient-app-global-banner-container {
+    min-height: 97px
+}
+
+.mb-0-25 {
+    margin-bottom: .166675rem
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.modal.fade.fade-in {
+    animation: fadeIn .25s
+}
+
+.dp-banners {
+    left: 0;
+    top: 0;
+    z-index: 1050
+}
+
+.spaces-bar-container {
+    height: auto;
+    max-height: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 105
+}
+
+html.spaces-height-tweak,
+html.spaces-height-tweak>body {
+    min-height: 100%
+}
+
+.logo-zl {
+    background-position: 0;
+    background-repeat: no-repeat;
+    display: block;
+    height: 25px
+}
+
+.logo-zl span {
+    display: none
+}
+
+.logo-zl.medium {
+    height: 35px
+}
+
+.footer {
+    border-top: 1px solid #edeff2
+}
+
+.footer .consent-settings {
+    font-size: 1rem !important
+}
+
+.footer .consent-settings:hover {
+    text-decoration: underline
+}
+
+body,
+html {
+    height: 100%
+}
+
+.wrapper {
+    height: auto !important;
+    min-height: 100%;
+    overflow-x: hidden
+}
+
+.no-overflow-wrapper .wrapper {
+    overflow: initial
+}
+
+.typeahead {
+    max-height: 420px;
+    max-width: 490px;
+    min-width: 490px;
+    overflow-y: auto;
+    z-index: 1041
+}
+
+.typeahead em {
+    font-style: normal
+}
+
+.typeahead>.active em {
+    background: transparent
+}
+
+.typeahead>.active>a {
+    font-weight: 400
+}
+
+@media(max-width:767.98px) {
+    .typeahead {
+        max-width: 100%;
+        min-width: 100%;
+        width: 100%
+    }
+}
+
+#search .type-wrapper {
+    display: block
+}
+
+@media(max-width:767.98px) {
+    #search .type-wrapper {
+        display: none
+    }
+}
+
+#search .capitalize {
+    text-transform: capitalize
+}
+
+#search .prevent-shrink {
+    flex-shrink: 0
+}
+
+#search .show-more {
+    color: #1662c6
+}
+
+#search .text-squash {
+    line-height: 1.5
+}
+
+#search .text-squeeze {
+    line-height: 1.2
+}
+
+html[region=de] #search .capitalize {
+    text-transform: none
+}
+
+html[region=hu] #profile-header #object-buttons .or {
+    display: none
+}
+
+html[region=tr] #vacations-panel #added-vacation>div strong {
+    margin-right: 0
+}
+
+html[region=tr] #most-demanded-insurances-short ul,
+html[region=tr] #most-demanded-services-short ul,
+html[region=tr] #popular-queries-short ul {
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 5px
+}
+
+html[region=tr] #profile-header #object-buttons .btn {
+    margin-right: 0 !important
+}
+
+html[region=it] .footer address {
+    white-space: nowrap
+}
+
+html[region=it] #doctor-calendars .calendar-editor table .buttons td i {
+    margin: 2px 0 0 -6px
+}
+
+#homepage h4 {
+    text-transform: none
+}
+
+#homepage h4 a {
+    position: relative;
+    top: 4px
+}
+
+#homepage #popular-specializations-cities,
+#homepage #says-opinions {
+    padding-bottom: 50px;
+    padding-top: 50px
+}
+
+#homepage.facilities-homepage #most-demanded-insurances,
+#homepage.facilities-homepage #most-demanded-services,
+#homepage.facilities-homepage #popular-queries {
+    border-bottom: 1px solid #dcdfe3;
+    height: auto
+}
+
+nav .dropdown-item-text {
+    width: -moz-max-content;
+    width: max-content
+}
+
+#verification-thanks a {
+    cursor: pointer
+}
+
+#after-registration-modal li {
+    margin: 30px 0;
+    padding-left: 60px;
+    position: relative
+}
+
+#after-registration-modal li i {
+    left: 0;
+    position: absolute;
+    top: 7px
+}
+
+#intro {
+    background-color: #2600ff;
+    min-height: 520px;
+    position: relative
+}
+
+#intro.doctors-for-victims-banner-enabled {
+    min-height: 600px
+}
+
+#intro h1.intro-header,
+#intro h2.intro-header {
+    color: #fff
+}
+
+#intro h2.intro-header {
+    margin-bottom: 30px;
+    margin-top: 0;
+    opacity: .8
+}
+
+#most-demanded-insurances-short,
+#most-demanded-services-short,
+#popular-queries-short {
+    bottom: 0;
+    left: 0;
+    position: relative;
+    text-shadow: none;
+    width: 100%
+}
+
+@media(max-width:767.98px) {
+
+    #most-demanded-insurances-short,
+    #most-demanded-services-short,
+    #popular-queries-short {
+        position: static;
+        width: 100%
+    }
+}
+
+#most-demanded-insurances-short .container,
+#most-demanded-services-short .container,
+#popular-queries-short .container {
+    background-color: #f7f9fa;
+    border-radius: 8px
+}
+
+@media(max-width:767.98px) {
+
+    #most-demanded-insurances-short .container,
+    #most-demanded-services-short .container,
+    #popular-queries-short .container {
+        border-radius: 0;
+        padding-left: 0;
+        padding-right: 0
+    }
+}
+
+#most-demanded-insurances-short .container ul,
+#most-demanded-services-short .container ul,
+#popular-queries-short .container ul {
+    margin: 0;
+    padding: 24px 20px;
+    width: 100%
+}
+
+#most-demanded-insurances-short .container li,
+#most-demanded-services-short .container li,
+#popular-queries-short .container li {
+    color: #1b2734
+}
+
+#most-demanded-insurances-short .container li:after,
+#most-demanded-services-short .container li:after,
+#popular-queries-short .container li:after {
+    top: -5px
+}
+
+#most-demanded-insurances-short .container li.more,
+#most-demanded-services-short .container li.more,
+#popular-queries-short .container li.more {
+    font-weight: 400
+}
+
+#most-demanded-insurances-short .container a,
+#most-demanded-services-short .container a,
+#popular-queries-short .container a {
+    color: #1b2734
+}
+
+#homepage-search {
+    background: rgba(0, 0, 0, .07);
+    border-radius: 5px;
+    padding: 0 10px 10px
+}
+
+@media(max-width:767.98px) {
+    #homepage-search {
+        margin: 0 -10px
+    }
+}
+
+#homepage-search #search {
+    position: relative
+}
+
+#homepage-search #search input[placeholder]::-moz-placeholder {
+    color: #627282
+}
+
+#homepage-search #search input[placeholder]::placeholder {
+    color: #627282
+}
+
+#homepage-search #search .search-field {
+    border: none;
+    font-size: 16px;
+    height: 55px
+}
+
+#homepage-search #search .form-control {
+    border-radius: 3px
+}
+
+#homepage-search #search button {
+    background: #3d83df;
+    color: #fff;
+    height: 55px
+}
+
+#homepage-search #search button:focus,
+#homepage-search #search button:hover {
+    background: #347dde
+}
+
+#homepage-search .navigation {
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none
+}
+
+#homepage-search .navigation::-webkit-scrollbar {
+    display: none
+}
+
+@media(max-width:767.98px) {
+    #homepage-search .navigation:after {
+        background: linear-gradient(270deg, #00b39b 27.94%, rgba(0, 179, 155, 0));
+        height: 60px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 34px
+    }
+}
+
+#homepage-search .navigation .btn {
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    position: relative
+}
+
+#homepage-search .navigation .btn.focus {
+    background: #fff;
+    color: #000
+}
+
+#homepage-search .navigation .btn.focus:first-child .svg-icon {
+    fill: #3d83df
+}
+
+#homepage-search .navigation .btn.focus:nth-child(2) .svg-icon {
+    fill: #8870d5
+}
+
+#homepage-search .navigation .btn.focus:nth-child(3) .svg-icon,
+#homepage-search .navigation .btn.focus:nth-child(4) .svg-icon {
+    fill: #3d83df
+}
+
+#homepage-search .navigation .btn>.badge {
+    position: absolute;
+    right: -10px;
+    top: -10px
+}
+
+.intro-bkg {
+    background-position: top;
+    background-repeat: no-repeat;
+    flex: 1 0 100%;
+    inset: 0;
+    opacity: 0;
+    position: absolute;
+    transition: opacity .5s ease;
+    width: 100%
+}
+
+@media(max-width:767.98px) {
+    .intro-bkg {
+        background-position: 85% bottom;
+        background-position-y: top;
+        background-size: 200%;
+        height: auto
+    }
+}
+
+.intro-bkg.active {
+    opacity: 1
+}
+
+/* .intro-bkg.intro-bkg-offline-consultation {
+    background-image: url('//platform.docplanner.com/img/general/homepage/homepage-all.svg?v=1')
+} */
+
+/* @media(max-width:767.98px) {
+    .intro-bkg.intro-bkg-offline-consultation {
+        background-image: linear-gradient(rgba(0, 179, 155, .9), rgba(0, 179, 155, .9)), url('//platform.docplanner.com/img/general/homepage/homepage-all.svg?v=1')
+    }
+} */
+/* 
+.intro-bkg.intro-bkg-online-consultation {
+    background-image: url('//platform.docplanner.com/img/general/homepage/homepage-bg-online-consultation.jpg?v=1')
+}
+
+@media(max-width:767.98px) {
+    .intro-bkg.intro-bkg-online-consultation {
+        background-image: linear-gradient(rgba(0, 179, 155, .9), rgba(0, 179, 155, .9)), url('//platform.docplanner.com/img/general/homepage/homepage-bg-online-consultation.jpg?v=10')
+    }
+} */
+
+#most-demanded-insurances,
+#most-demanded-services,
+#popular-queries {
+    background: #fff;
+    border-bottom: 0 solid #edeff2;
+    height: 0;
+    overflow: hidden
+}
+
+#most-demanded-insurances h5,
+#most-demanded-services h5,
+#popular-queries h5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+#most-demanded-insurances h5 a,
+#most-demanded-services h5 a,
+#popular-queries h5 a {
+    color: #1b2734
+}
+
+#most-demanded-insurances .container,
+#most-demanded-services .container,
+#popular-queries .container {
+    padding-bottom: 30px;
+    padding-top: 50px
+}
+
+#says-opinions {
+    background: #fff;
+    border-top: 1px solid #edeff2;
+    padding-bottom: 30px
+}
+
+#says-opinions figcaption {
+    background: #f7f9fa;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px
+}
+
+#popular-specializations-cities li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+#popular-specializations-cities li a {
+    color: #627282
+}
+
+#popular-links {
+    margin-bottom: 75px
+}
+
+#popular-links a {
+    color: #627282
+}
+
+#popular-specializations {
+    margin-bottom: 75px
+}
+
+#init-loader {
+    display: none
+}
+
+#visit-reminder-alert {
+    bottom: 30px;
+    position: fixed;
+    right: 30px;
+    z-index: 11
+}
+
+.container .online-consultation-panel {
+    border-bottom: 5px solid #8870d5
+}
+
+.home-page-banner-wrapper>div {
+    flex: 1 1 auto
+}
+
+.home-page-banner-wrapper .home-page-banner {
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    height: 100%
+}
+
+.home-page-banner-wrapper .home-page-banner .card-body,
+.home-page-banner-wrapper .home-page-banner .row {
+    height: 100%
+}
+
+.home-page-banner-wrapper .home-page-banner-calm {
+    border-bottom-color: #8870d5
+}
+
+.home-page-banner-wrapper .home-page-banner-success {
+    border-bottom-color: #00b39b
+}
+
+.home-page-banner-wrapper .home-page-banner-img-bottom {
+    align-items: flex-end
+}
+
+.home-page-banner-wrapper .home-page-banner-img-bottom img {
+    margin-bottom: -10px;
+    margin-right: -10px
+}
+
+.home-page-banner-wrapper .home-page-banner-img-top {
+    align-items: flex-start
+}
+
+.home-page-banner-wrapper .home-page-banner-img-top img {
+    margin-right: -10px
+}
+
+.dp-carousel {
+    min-height: 144px;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%
+}
+
+.dp-carousel li {
+    height: 124px;
+    min-width: 375px
+}
+
+.dp-carousel li .dp-doctor-card {
+    border: 1px solid #edeff2;
+    border-radius: .2667rem
+}
+
+.dp-carousel .tns-visually-hidden {
+    display: none
+}
+
+.dp-carousel-nav {
+    z-index: 100
+}
+
+.dp-carousel-nav.dp-carousel-nav-prev {
+    left: 0
+}
+
+.dp-carousel-nav.dp-carousel-nav-next {
+    right: 0
+}
+
+.floating-cookie-info {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1040
+}
+
+.floating-cookie-info a {
+    color: #1662c6
+}
+
+.floating-cookie-info.floating-cookie-info-hidden {
+    visibility: hidden
+}
+
+@media(min-width:768px) {
+    .floating-cookie-info .floating-cookie-info-wrapper {
+        max-width: 615px
+    }
+}
+
+.floating-cookie-info .floating-cookie-info-panel {
+    border-bottom: 0;
+    border-radius: .2667rem;
+    box-shadow: 0 0 22px 0 rgba(0, 0, 0, .1);
+    margin-left: 0;
+    margin-right: 0
+}
+
+@media(min-width:768px) {
+    .floating-cookie-info .floating-cookie-info-panel {
+        margin-left: -10px;
+        margin-right: -10px
+    }
+}
+
+.floating-cookie-info .floating-cookie-info-img {
+    height: 94px;
+    margin-left: auto;
+    order: 2;
+    width: 138px
+}
+
+@media(min-width:768px) {
+    .floating-cookie-info .floating-cookie-info-img {
+        height: 126px;
+        order: 0;
+        width: 185px
+    }
+}
+
+.floating-cookie-info .floating-cookie-info-btn {
+    position: absolute;
+    right: 0;
+    top: 6px
+}
+
+@media(min-width:768px) {
+    .floating-cookie-info .floating-cookie-info-btn {
+        right: 22px;
+        top: 22px
+    }
+}
+
+.above-cookie-info {
+    z-index: 4125
+}
